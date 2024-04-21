@@ -1,0 +1,262 @@
+@use '../../../assets/styles/styles.scss' as *;
+@import '../../../assets/styles/variables.scss';
+
+.component {
+  box-sizing: border-box;
+  cursor: pointer;
+  position: relative;
+  display: inline-block;
+}
+
+.size {
+  width: 326px;
+  height: 510px;
+  &__countries {
+    width: 388px;
+    height: 548px;
+  }
+  &__todo {
+    width: 355px;
+    height: 500px;
+  }
+}
+.small {
+  width: 299px;
+  height: 360px;
+}
+
+.shd {
+  position: relative;
+}
+
+.dir {
+  position: relative;
+}
+
+.shd::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0; /* Позиционируем псевдоэлемент внизу родительского элемента */
+  width: 100%;
+  height: 0; /* Начальная высота 0 */
+  background-color: rgba(0, 0, 0, 0.6); /* Задаем цвет затемнения */
+  transition: height 0.4s ease-in-out; /* Плавное изменение высоты */
+}
+
+.shd:hover::before {
+  height: 100%; /* При наведении увеличиваем высоту до 100% */
+}
+
+.shd:hover .info__description {
+  opacity: 1; /* Показываем текст при наведении */
+}
+
+.dir::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0; /* Позиционируем псевдоэлемент внизу родительского элемента */
+  width: 100%;
+  height: 0; /* Начальная высота 0 */
+  background-color: rgba(0, 0, 0, 0.6); /* Задаем цвет затемнения */
+  transition: height 0.4s ease-in-out; /* Плавное изменение высоты */
+}
+
+.dir:hover::before {
+  height: 100%; /* При наведении увеличиваем высоту до 100% */
+}
+
+.dir:hover .info__description_dir {
+  opacity: 1; /* Показываем текст при наведении */
+}
+
+.dir:hover .info__price {
+  opacity: 1; /* Показываем текст при наведении */
+}
+
+.str {
+  position: relative;
+}
+
+.str::before{
+  content: "";
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 0;
+  background-color: rgba(0, 0, 0, 0.6); /* Цвет затемнения */
+  transition: width 0.4s ease-in-out; /* Плавное изменение ширины */
+}
+
+.str::before {
+  left: 0; /* Первая полоса от левой границы */
+}
+
+.str:hover::before {
+  width: 100%; /* Увеличение ширины до 50% при наведении */
+}
+
+.str:hover .info__moto {
+  opacity: 1;
+}
+
+.str:hover .info__price {
+  opacity: 1;
+}
+
+.tr {
+  transition: transform 0.8s ease; // добавляем плавное изменение размера при наведении
+}
+
+.tr:hover {
+  transform: scale(1.5); // увеличиваем размер карточки при наведении на 10%
+}
+
+.tr .info__motoD {
+  opacity: 0;
+  transition: opacity 0.8s ease; // плавное изменение прозрачности
+}
+
+.tr:hover .info__motoD {
+  opacity: 1; // показываем текст при наведении
+}
+
+.info {
+  position: absolute;
+  top: 1%;
+  left: 1%;
+  &__title {
+    text-align: start;
+    padding: 20px 0 60px 20px;
+    @include fontDescription;
+    color: $colorWhite;
+    &_tr {
+      @include fontText;
+      color: $colorWhite;
+      padding: 20px 0 5px 15px;
+    }
+    &_imp {
+      @include fontH6;
+      color: $colorWhite;
+      padding: 20px 0 0 20px;
+      text-transform: uppercase;
+    }
+    &_text {
+      @include fontH6;
+      color: $colorWhite;
+      padding-left: 20px;
+      text-transform: uppercase;
+    }
+  }
+  &__offer {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 10px;
+    padding: 0 0 0 20px;
+  }
+  &__date {
+    @include fontText;
+    color: $colorWhite;
+  }
+  &__direction {
+    @include fontH7;
+    width: 240px;
+    color: $colorWhite;
+    text-transform: uppercase;
+  }
+  &__travel {
+    &_tr {
+      @include fontH4;
+      color: $colorWhite;
+      padding-left: 15px;
+      text-transform: uppercase;
+    }
+  }
+  &__imp {
+    max-width: 230px;
+  }
+  &__moto {
+    //display: none; /* По умолчанию скрываем блок с текстом moto */
+    @include fontH4;
+    color: $colorLight;
+    margin-top: 150px;
+    margin-left: 60px;
+    margin-right: 30px;
+    font-size: 1.0em;
+    transition: opacity 0.6s ease-in-out; /* Плавное появление текста */
+    opacity: 0; /* Начальная прозрачность */
+  }
+  &__price {
+    //display: none; /* По умолчанию скрываем блок с текстом moto */
+    @include fontPrice;
+    color: $colorLight;
+    margin-top: 50px;
+    margin-left: 120px;
+    transition: opacity 0.6s ease-in-out; /* Плавное появление текста */
+    opacity: 0; /* Начальная прозрачность */
+  }
+  &__motoD {
+    //display: none; /* По умолчанию скрываем блок с текстом moto */
+    @include fontH4;
+    color: $colorLight;
+    text-align: start;
+    padding: 0 0 24px 24px;
+    margin-top: 320px;
+    font-size: 30px;
+    transition: opacity 0.9s ease-in-out; /* Плавное появление текста */
+    opacity: 0; /* Начальная прозрачность */
+  }
+  &__countriesList {
+    display: flex;
+    flex-direction: column;
+  }
+  &__text_h1 {
+    @include fontH1;
+    color: $colorLight;
+    text-transform: uppercase;
+    margin-top: 80px;
+    margin-left: 30px;
+  }
+  &__text_h3 {
+    @include fontH3;
+    color: $colorLight;
+    margin-top: 30px;
+    margin-left: 30px;
+  }
+  &__description {
+    @include fontH4;
+    color: $colorLight;
+    margin-top: 60px;
+    margin-left: 30px;
+    margin-right: 30px;
+    font-size: 1.0em;
+    transition: opacity 0.4s ease-in-out; /* Плавное появление текста */
+    opacity: 0; /* Начальная прозрачность */
+    &_dir {
+      color: $colorLight;
+      margin-top: 30px;
+      margin-right: 30px;
+      transition: opacity 0.4s ease-in-out; /* Плавное появление текста */
+      opacity: 0; /* Начальная прозрачность */
+    }
+    &_text {
+      @include fontH4;
+      font-size: 16px;
+    }
+  }
+  &__adv {
+    padding: 250px 0 0 20px;
+    @include fontH3;
+    color: $colorWhite;
+    text-transform: uppercase;
+    font-size: 1em;
+  }
+}
+
+
+// .imp {
+//   width: 220px;
+// }

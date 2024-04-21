@@ -1,0 +1,88 @@
+@use '../../../assets/styles/styles.scss' as *;
+@import '../../../assets/styles/variables.scss';
+
+.container {
+  padding: 80px 80px 80px 0px;
+  display: flex;
+  justify-content: center;
+  background-color: $colorLight;
+}
+
+.advantages {
+  max-width: 100%; /* адаптивная ширина */
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  gap: 84px;
+}
+
+.block{
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  gap: 39px;
+}
+
+.text {
+  max-width: 408px;
+  box-sizing: border-box;
+}
+
+.title {
+  @include fontDescription;
+  box-sizing: border-box;
+  margin-bottom: 16px;
+}
+
+.name {
+  @include fontH1;
+  box-sizing: border-box;
+  margin-bottom: 40px;
+}
+
+.highlight {
+  color: $colorBold;
+  box-sizing: border-box;
+}
+
+.description {
+  @include fontText;
+  box-sizing: border-box;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  max-width: 626px;
+  max-height: 898px;
+  box-sizing: border-box;
+  gap: 48px;
+  transform: translateY(0); /* Начальное положение - элемент не двигается */
+}
+
+.cards > div:nth-child(odd):hover {
+  animation: moveFromTop 3s ease forwards; /* Анимация для четных элементов */
+}
+
+.cards > div:nth-child(even):hover {
+  animation: moveFromBottom 3s ease forwards; /* Анимация для нечетных элементов */
+}
+
+@keyframes moveFromTop {
+  0% {
+    transform: translateY(0); /* Начальное положение для движения сверху вниз */
+  }
+  100% {
+    transform: translateY(10%); /* Конечное положение - возвращаем в исходное */
+  }
+}
+
+@keyframes moveFromBottom {
+  0% {
+    transform: translateY(0); /* Начальное положение для движения снизу вверх */
+  }
+  100% {
+    transform: translateY(-10%); /* Конечное положение - возвращаем в исходное */
+  }
+}

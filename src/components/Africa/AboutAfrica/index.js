@@ -1,0 +1,1 @@
+export { AboutAfrica } from './AboutAfrica';

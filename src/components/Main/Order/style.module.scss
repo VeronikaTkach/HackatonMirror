@@ -1,0 +1,153 @@
+@use '../../../assets/styles/styles.scss' as *;
+@import '../../../assets/styles/variables.scss';
+
+.parallax {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+
+  .layer1,
+  .layer2,
+  .layer3,
+  .layer4 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: transform 1s ease;
+  }
+
+  .layer1 {
+    background-image: url('../../../assets/images/parallax/layer1.jpg');
+  }
+
+  .layer2 {
+    background-image: url('../../../assets/images/parallax/layer2.png');
+  }
+
+  .layer3 {
+    background-image: url('../../../assets/images/parallax/layer3.png');
+  }
+
+  .layer4 {
+    background-image: url('../../../assets/images/parallax/layer4.png');
+  }
+
+  &:hover .layer2 {
+    transform: translate(1%, 1%);
+  }
+
+  &:hover .layer3 {
+    transform: translate(1%, 1%);
+  }
+
+  &:hover .layer4 {
+    transform: translate(2%, 2%);
+  }
+
+  .order {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+    width: 547px;
+    height: 471px;
+    padding: 40px;
+    top: 390px;
+    left: 40px;
+    background: rgba(255, 255, 255, 0.15);
+    &__block {
+      display: flex;
+      flex-direction: column;
+      gap: 28px;
+    }
+    &__title {
+      @include fontDescription;
+      font-size: 25px;
+      color: white;
+    }
+    &__name {
+      @include fontH1;
+      font-size: 35px;
+      text-transform: uppercase;
+      color: white;
+    }
+    &__inputs {
+      display: flex;
+      flex-direction: column;
+      &_row {
+        display: flex;
+        gap: 12px;
+      }
+    }
+  }
+
+  input {
+    border: none;
+    border-bottom: 0.5px solid white;
+    margin-bottom: 30px; 
+    background-color: transparent;
+    color: white;
+    &:focus {
+      outline: none;
+    }
+    &::placeholder {
+      color: white;
+      font-size: 100%;
+    }
+  }
+
+  .checkbox {
+    margin-bottom: 20px; 
+  }
+}
+
+.submittedMessage {
+  @include fontH3;
+  text-transform: uppercase;
+  width: 553px;
+  height: 279px;
+  top: 332px;
+  left: 444px;
+}
+
+/* Модальное окно */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modalContent {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.modalTitle {
+  @include fontH2;
+  margin-bottom: 10px;
+}
+
+.modalCloseBtn {
+  background-color: #ccc;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.modalCloseBtn:hover {
+  background-color: #bbb;
+}

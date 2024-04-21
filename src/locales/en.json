@@ -1,0 +1,228 @@
+{
+  "header": {
+    "about_company": "About the company",
+    "directions": "Directions",
+    "styles": "Styles of recration",
+    "impressions": "Impressions",
+    "Up": "Up",
+    "Main": "Main"
+  },
+
+  "footer": {
+    "contacts": "Our contacts",
+    "available": "We are available 24/7",
+    "directions": "Destinations",
+    "africa": "Africa",
+    "asia": "Asia",
+    "australia": "Australia",
+    "europe": "Europe",
+    "america": "America",
+    "holidayTypes": "Types of Holidays",
+    "beachHoliday": "Beach Holiday",
+    "kitesurfing": "Kitesurfing",
+    "diving": "Diving",
+    "yachting": "Yachting",
+    "skiing": "Skiing",
+    "socialMedia": "Follow us on social media",
+    "privacyPolicy": "Privacy Policy",
+    "personalDataProcessingPolicy": "Personal Data Processing Policy",
+    "offerAgreement": "Offer Agreement"
+  },
+
+  "aboutUs": {
+    "about_company": "about the company",
+    "EXCLUSIVE": "EXCLUSIVE",
+    "TRIPS": "TRIPS",
+    "INDIVIDUAL_APPROACH": "INDIVIDUAL APPROACH",
+    "FOR_THE_MOST": "FOR THE MOST",
+    "SOPHISTICATED": "SOPHISTICATED",
+    "TOURISTS": "TOURISTS",
+    "descr1": "First Class offers luxurious and unique travel experiences around the world. We specialize in organizing individual tours for the most discerning clients.",
+    "descr2": "We offer a wide range of services, including luxury hotel accommodations, private jet and yacht bookings, exclusive excursions and celebrity meet-and-greets, and personalized travel assistance."
+  },
+
+  "directions": {
+    "directions": "directions",
+    "CATCH": "CATCH",
+    "IMPRESSIONS": "IMPRESSIONS",
+    "description": "Your desires are not limited by anything. You are limited only by your own imagination.", 
+    "posibilities": "Our company has limitless posibilities"
+  },
+
+  "continents": {
+    "africa": "AFRICA",
+    "europe": "EUROPE",
+    "asia": "ASIA",
+    "america": "AMERICA",
+    "australia": "AUSTRALIA",
+    "video_not_supported": "Your browser does not support the video."
+  },
+
+  "travels": {
+    "types": "types of recration",
+    "FIND": "FIND A TRIP",
+    "TRIP": "TO SUITE ",
+    "taste": "YOUR TASTE"
+  },
+
+  "advantages": {
+    "advantages": "advantages",
+    "WHY": "WHY",
+    "FIRST_CLASS": "FIRST CLASS",
+    "descr1": "By choosing our company, you can be sure that you will receive the highest level of service and an unforgettable experience from your trip or event.",
+    "descr2": "We will create ideal conditions for relaxation and entertainment for you, while leaving space for your individuality and uniqueness."
+  },
+
+  "impressions": {
+    "impressions": "impressions",
+    "STORIES": "STORIES",
+    "THAT": "THAT",
+    "INSPIRE": "INSPIRE",
+    "card1": {
+      "title": "Unforgettable climbing trip",
+      "text1": "to Elbrus",
+      "text2": "to Elbrus",
+      "text3": "to Elbrus",
+      "text4": "to Elbrus"
+    },
+    "card2": {
+      "title": "Luxury hotels",
+      "text1": "in Singapore",
+      "text2": "in Singapore",
+      "text3": "in Singapore",
+      "text4": "in Singapore"
+    },
+    "card3": {
+      "title": "Tibetan paradise",
+      "text1": "paradise",
+      "text2": "paradise",
+      "text3": "paradise",
+      "text4": "paradise"
+    }
+  },
+
+  "order": {
+    "start_journey": "world at your step",
+    "begin_travel": "begin your journey at the highest level\nwith first class",
+    "name": "Name",
+    "surname": "Surname",
+    "email": "Email",
+    "phone": "Phone",
+    "submit_button": "Submit Application",
+    "submitted_message": "Your request has been submitted!",
+    "modal_title": "Your request has been submitted",
+    "modal_message": "We will contact you shortly.",
+    "close_button": "Close",
+    "data_processing_agreement": "I agree to the processing of personal data"
+  },
+
+  "aboutAfrica": {
+    "title": "Africa",
+    "uniqueTours": "UNIQUE TOURS",
+    "toAmazingCorners": "TO AMAZING CORNERS OF AFRICA",
+    "description1": "Africa is a mysterious continent filled with wild beauty and amazing adventures.",
+    "description2": "From vast deserts to dense jungles, from majestic mountains to endless beaches — here, everyone will find something to their liking."
+  },
+
+  "impressionsList": {
+    "review1": "First Class is just a find for a tourist who is already difficult to surprise. The company organizes such tours that it is impossible even to imagine. These impressions will remain forever.",
+    "author1": "KRISTINA, MOSCOW",
+    "review2": "We spent an unforgettable week in Africa, relaxing on a secluded island and enjoying the luxurious service. It was a truly exclusive journey that we will remember for the rest of our lives!",
+    "author2": "ANTON, ST. PETERSBURG",
+    "review3": "Vacation in Africa turned out to be a real discovery for us! We visited mysterious tribal settlements, tried local cuisine, and immersed ourselves in the world of traditions and customs of this mysterious continent.",
+    "author3": "KIRILL, MOSCOW"
+  },  
+
+  "countriesAfrica": {
+    "title": "countries of Africa",
+    "AFRICA": "AFRICA IS ",
+    "DREAM": "A DREAM",
+    "TRAVELER": "FOR TRAVELERS,",
+    "EXPLORE": "EXPLORE",
+    "HER_UNRESTRICTED": "IT UNRESTRICTED!",
+    "description1": "Discover the amazing diversity of Africa - from exotic beaches to ancient pyramids!",
+    "description2": "Don't miss the opportunity to embark on an exciting journey through the mysterious Africa and discover its unique beauties and mysteries."
+  },
+
+  "amazing": {
+    "title": "such an amazing Africa",
+    "try": "Try Africa",
+    "Africa": "for",
+    "taste": "a taste"
+  },
+
+  "todo": {
+    "what_to_do": "what to do",
+    "discover": "",
+    "your": "Discover",
+    "africa": "",
+    "your_africa": "your Africa",
+    "botswana": "Botswana",
+    "treasure_hunt": "Treasure Hunt",
+    "find_gold": "Find gold!",
+    "ghana": "Ghana",
+    "visit_reserve": "Visit reserve",
+    "your_nature": "Your nature!",
+    "tanzania": "Tanzania",
+    "kilimanjaro": "Kilimanjaro",
+    "above_clouds": "Above the clouds!"
+  },
+
+  "cardcountrieslist": {
+    "Ghana": "Ghana",
+    "GhanaDesc": "Here you can visit numerous reserves with elephants, antelopes, monkeys, and other exotic animals, visit the ruins of the Cape Coast and Elmina castles, which are UNESCO World Heritage Sites.",
+    "Namibia": "Namibia",
+    "NamibiaDesc": "Here is the oldest desert on earth — the Namib, the legendary Skeleton Coast, numerous national parks, the location where the largest meteorite, Hoba, fell, the second largest after the Grand Canyon, and much more.",
+    "Botswana": "Botswana",
+    "BotswanaDesc": "One of the popular tourist attractions, along with safaris in the Kalahari Desert and visits to national parks, has been the search for ancient treasures hidden from colonizers in the caves of Gchwihaba since the 1930s.",
+    "Uganda": "Uganda",
+    "UgandaDesc": "Here you will be able to experience a real African adventure by going on safaris to national parks, climbing the summit of East Africa - Mount Kilimanjaro, exploring mysterious caves and gorges, and enjoying local traditions and culinary delights.",
+    "Kenya": "Kenya",
+    "KenyaDesc": "The land of the Maasai tribe and the hallmark of real African nature, it is very beautiful, friendly, and touristy developed. Mount Kenya is the second-highest on the continent after Kilimanjaro. Throughout the country, you can observe flocks of migrating birds.",
+    "CapeVerde": "Cape Verde",
+    "CapeVerdeDesc": "The islands have picturesque landscapes: extinct volcanoes, mountain ranges, where you can go trekking, blooming meadows, where you can just take a walk. But the main feature of Cape Verde is the ocean — it is used to its full potential: starting from beaches with black volcanic sand, continuing with dives to shipwreck sites, and ending with windsurfing.",
+    "Tanzania": "Tanzania",
+    "TanzaniaDesc": "Zanzibar Island is a resort where the beautiful Stone Town, founded by the Arabs in the 9th century, is located. Tours for spices start from here, during which you can cut cinnamon and try unfamiliar spices. The famous Serengeti National Park, which covers a huge area and is home to more than three million large wild animals.",
+    "Madagascar": "Madagascar",
+    "MadagascarDesc": "There are many nature reserves and protected areas on the island. The largest reserve is Tsingy de Bemaraha, which, like many others, is included in the UNESCO World Heritage List. The country is rich in beautiful beaches.",
+    "Zimbabwe": "Zimbabwe",
+    "ZimbabweDesc": "Zimbabwe has a very well-functioning nature conservation structure and there are unusually many animals even for Africa, so in some places, hunting is allowed."
+  },
+
+  "carddirection": {
+    "directions": "Directions",
+    "CATCH": "CATCH",
+    "IMPRESSIONS": "IMPRESSIONS",
+    "description": "Discover new horizons with our tours!",
+    "posibilities": "Choose a direction and go on an exciting journey.",
+    "America": "America",
+    "date1": "3-5 days",
+    "PowellLakeGlenCanyon": "Powell Lake Glen Canyon",
+    "PowellLakeGlenCanyonDesc": "Incredible canyons and natural landscapes, unlike anything on Earth. The lake is located in the Glen Canyon National Recreation Area on the border of Utah and Arizona.",
+    "Indonesia": "Indonesia",
+    "date2": "2-3 days",
+    "weekendInBali": "weekend in Bali",
+    "weekendInBaliDesc": "Spend an unforgettable weekend on the resort island of Bali! Here you will find white sandy beaches, warm sea, exquisite cuisine, and luxurious SPA procedures.",
+    "Malaysia": "Malaysia",
+    "date3": "7-12 days",
+    "KualaLumpurBorneo": "Kuala Lumpur, Borneo",
+    "KualaLumpurBorneoDesc": "On the island of Borneo, you will relax on delightful beaches. Immerse yourself in mesmerizing nature and meet exotic animals such as orangutans."
+  },
+
+  "cardtravel": {
+    "types": "Types of Recreation",
+    "kiteSurfing": "Kite Surfing",
+    "FEEL_THE_FREEDOM_WITH_KITESURFING": "FEEL THE FREEDOM WITH KITESURFING!",
+    "skiing": "Skiing",
+    "CONQUER_THE_PEAKS_WITH_US": "CONQUER THE PEAKS WITH US!",
+    "islandRetreat": "Island Retreat",
+    "DIVE_INTO_A_TROPICAL_PARADISE": "DIVE INTO A TROPICAL PARADISE"
+  },
+
+  "cardAdv": {
+    "indivExcur": "Individual excursions and specially designed routes around the world",
+    "privateTours": "Private helicopter and yacht tours",
+    "vipTours": "VIP transfers and private jets",
+    "topService": "Luxury hotels and villas with the highest level of service"
+  }
+}

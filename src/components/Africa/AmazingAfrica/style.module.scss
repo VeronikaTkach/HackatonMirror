@@ -1,0 +1,67 @@
+@use '../../../assets/styles/styles.scss' as *;
+@import '../../../assets/styles/variables.scss';
+
+.container {
+  padding: 100px 80px;
+  display: flex;
+  justify-content: center;
+}
+
+.amazing {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  &__title {
+    padding-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+  }
+  &__text {
+    @include fontDescription;
+    color: $colorDark;
+    padding-bottom: 16px;
+  }
+  &__name {
+    @include fontH1;
+    color: $colorDark;
+    text-transform: uppercase;
+  }
+  &__photo {
+    display: flex;
+    flex-direction: row;
+    gap: 36px;
+  }
+  &__poster {
+
+  }
+  &__block {
+    width: 634px;
+    height: 556px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 36px;
+    position: relative; /* Установим позицию для создания кругляшка */
+  }
+}
+
+.highlight {
+  @include fontH1;
+  text-transform: uppercase;
+  color: $colorBold;
+  box-sizing: border-box;
+}
+
+.zoomContainer {
+  overflow: hidden; /* Скрытие контента за пределами контейнера */
+  width: 100%; /* Ширина контейнера равна размеру изображения */
+  height: 100%; /* Высота контейнера равна размеру изображения */
+  position: relative; /* Позиционируем, чтобы дочерние элементы могли использовать абсолютное позиционирование */
+}
+
+.zoomContainer img {
+  transition: transform 0.5s ease-in-out; /* Плавный переход при изменении масштаба */
+}
+
+.zoomContainer:hover img {
+  transform: scale(1.4); /* Увеличение масштаба при наведении */
+}

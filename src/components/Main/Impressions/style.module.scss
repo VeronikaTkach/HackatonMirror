@@ -1,0 +1,90 @@
+// style.module.scss
+
+@use '../../../assets/styles/styles.scss' as *;
+@import '../../../assets/styles/variables.scss';
+
+.container {
+  display: flex;
+  justify-content: center;
+}
+
+.impression {
+  max-width: 100%;
+  padding: 100px 0px;
+  box-sizing: border-box;
+  display: flex;
+}
+
+.block {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+
+.text {
+  width: 560px;
+  height: 124px;
+  box-sizing: border-box;
+
+  .name {
+    @include fontH1;
+    box-sizing: border-box;
+    margin-bottom: 40px;
+
+    .highlight {
+      @include fontH1;
+      color: $colorBold;
+      box-sizing: border-box;
+      transition: font-weight 2s ease;
+    }
+
+    .highlight:hover {
+      font-weight: bold;
+    }
+  }
+}
+
+.title {
+  @include fontDescription;
+  box-sizing: border-box;
+  margin-bottom: 16px;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 80px;
+  box-sizing: border-box;
+}
+
+.card {
+  flex: 0 0 calc(33.333% - 80px);
+  opacity: 0;
+  transition: opacity 0.5s ease;
+
+  &.visible {
+    opacity: 1;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .card {
+    flex: 0 0 calc(50% - 80px);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .card {
+    flex: 0 0 calc(100% - 80px);
+  }
+}
+
+.slideInLeft {
+  opacity: 0;
+  transition: opacity 0.5s ease;
+
+  &.visible {
+    opacity: 1;
+  }
+}

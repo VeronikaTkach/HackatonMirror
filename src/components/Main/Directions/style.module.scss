@@ -1,0 +1,80 @@
+@use '../../../assets/styles/styles.scss' as *;
+@import '../../../assets/styles/variables.scss';
+
+.directions {
+  max-width: 100%; /* адаптивная ширина */
+  min-height: 719px; /* минимальная высота для содержимого */
+  box-sizing: border-box;
+  background-color: $colorLight;
+  display: flex;
+  justify-content: center;
+  padding: 100px 0 100px 80px;
+}
+
+.text {
+  width: 327px;
+  height: 283px;
+  box-sizing: border-box;
+
+  .title {
+    @include fontDescription;
+    box-sizing: border-box;
+    margin-bottom: 16px;
+    
+    &:hover {
+      font-weight: bold; // изменяем шрифт на жирный при наведении на него курсора мыши
+    }
+  }
+
+  .name {
+    @include fontH1;
+    box-sizing: border-box;
+    margin-bottom: 40px;
+    
+    .highlight {
+      @include fontH1;
+      color: $colorBold;
+      box-sizing: border-box;
+      transition: font-weight 2s ease; // добавляем анимацию для свойства font-weight
+    }
+
+    .highlight:hover {
+      font-weight: bold; // изменяем шрифт на жирный при наведении на него курсора мыши
+    }
+  }
+
+  .description {
+    @include fontText;
+    box-sizing: border-box;
+  }
+}
+
+.cards {
+  display: flex; /* Устанавливаем flex-контейнер */
+  flex-wrap: nowrap; /* Запрещаем перенос элементов на новую строку */
+  justify-content: flex-start; /* Располагаем элементы в начале контейнера */
+  align-items: center; /* Выравниваем элементы по центру по вертикали */
+  padding-left: 100px;
+  gap: 48px;
+  box-sizing: border-box;
+}
+
+.card {
+  opacity: 0; /* Начальное состояние карточки */
+  transition: opacity 0.5s ease; /* Анимация появления */
+}
+
+.slideInRight {
+  animation: slideInRight 0.5s ease forwards;
+}
+
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(100%); // Начальное положение карточки справа за пределами экрана
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0); // Конечное положение карточки
+  }
+}

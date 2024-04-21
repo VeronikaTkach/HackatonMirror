@@ -1,0 +1,115 @@
+@use '../../assets/styles/styles.scss' as *;
+@import '../../assets/styles/variables.scss';
+
+@import 'https://fonts.googleapis.com/css?family=Delius';
+
+// * {
+//   padding:0;
+//   margin:0;
+//   box-sizing:border-box;
+// }
+
+.container {
+  width:100%;
+  height:100vh;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  background:$colorLight;
+  font-family: 'Delius', cursive;
+  box-sizing:border-box;
+}
+
+.inprogress{
+  width:200px;
+  height:200px;
+  background:transparent;
+   .label{
+      display:block;
+      position:relative;
+      width:200px;
+      height:200px;
+      background:transparent;
+      text-align:center;
+      line-height:200px;
+      &:before {
+        content:"";
+        opacity:0;
+        animation: AnimeCount 20s linear infinite;
+      }
+    }
+  .span {
+    display:block;
+    position:absolute;
+    width:200px;
+    height:200px;
+    background:transparent;
+    border-radius:100%;
+    
+    &:nth-of-type(1) {
+      border:2px solid #f1ca02;
+      transform: scale(0.02,1);
+      animation: AnimeOne 1s linear infinite alternate;  
+    }
+    
+    &:nth-of-type(2) {
+      border:2px solid #a0c546;
+      transform: scale(1,0.02);
+      animation: AnimeOne 1s linear infinite alternate;  
+    }
+    
+    &:nth-of-type(3) {
+      border:2px solid #a0c546;
+      transform: scale(1,0.02)rotate(-90deg);
+      animation: AnimeOne 1s linear infinite alternate;  
+    }
+    
+    &:nth-of-type(4) {
+      border:2px solid #a0c546;
+      transform: scale(1,0.02)rotate(45deg);
+      animation: AnimeOne 1s linear infinite alternate;  
+    }
+    
+    
+  }
+}
+
+
+@keyframes AnimeOne {
+  to {
+     transform: scale(1,1)rotate(45deg);
+     border:2px solid #ed5936;
+  }
+}
+
+@keyframes AnimeCount {
+  0% { opacity:1}
+  9% { content:"очень"}
+  10% { opacity:0}
+  11% { content:"и"}
+  19% { opacity:1} 
+  20% { opacity:0} 
+  29% { content:"очень"}
+  30% { opacity:1}
+  31% { opacity:0}
+  33% { content:"скоро"}
+  40% { opacity:1}
+  41% { opacity:0}
+  49% { content:"здесь"}
+  50% { opacity:1}
+  53% { opacity:0}
+  55% { content:"появится"}
+  60% { opacity:1}
+  62% { opacity:0}
+  66% { content:"новая"}
+  70% { opacity:1}
+  72% { opacity:0} 
+  75% { content:"красивая";}
+  80% { opacity:1}
+  83% { opacity:0}
+  85% { content:"страница";}
+  90% { opacity:1}
+  91% { opacity:0}
+  95% { content:";)"}
+  100% { opacity:1} 
+}

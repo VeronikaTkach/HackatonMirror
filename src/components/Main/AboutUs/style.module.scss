@@ -1,0 +1,99 @@
+@use '../../../assets/styles/styles.scss' as *;
+@import '../../../assets/styles/variables.scss';
+
+.container {
+  max-width: 1440px;
+  height: 759px;
+  padding: 100px 200px;
+  display: flex;
+  justify-content: center;
+}
+
+.aboutUs {
+  @include fontDescription;
+  // max-width: 100%; /* адаптивная ширина */
+  min-height: 540px; /* минимальная высота для содержимого */
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  &__title {
+    width: 800px;
+    height: 166px;
+    margin-left: 496px;
+  }
+  &__main {
+
+  }
+  &__block {
+
+  }
+}
+
+.title {
+  @include fontDescription;
+  box-sizing: border-box;
+  margin-top: 8px;
+  margin-bottom: 16px;
+}
+
+.name {
+  @include fontH1;
+  box-sizing: border-box;
+}
+
+.highlight {
+  color: $colorBold;
+  box-sizing: border-box;
+}
+
+.imageContainer {
+  // position: absolute; /* абсолютное позиционирование */
+  // top: 930px; /* начало отсчета по вертикали */
+  // left: 80px; /* начало отсчета по горизонтали */
+  display: flex;
+  justify-content: space-between;
+  margin-top: 143px;
+  box-sizing: border-box;
+}
+
+.image1, .image2 {
+  position: relative;
+  transition: transform 0.3s ease-in-out; /* плавное изменение масштаба */
+  transform-origin: center center; /* центрируем точку масштабирования */
+  box-sizing: border-box;
+}
+
+.image1:hover, .image2:hover {
+  transform: scale(1.2); /* увеличиваем масштаб при наведении */
+  z-index: 2; /* увеличиваем z-index для поднятия изображения над другими элементами */
+}
+
+.image1 {
+  max-width: 436px; /* задаем ширину фото */
+  height: 440px; /* задаем высоту фото */
+  // left: 80px; /* позиция по оси X */
+  // top: 157px; /* позиция по оси Y */
+  top: -550px;
+  z-index: 0; /* чтобы первая картинка находилась над второй */
+}
+
+.image2 {
+  max-width: 480px; /* задаем ширину фото */
+  height: 339px; /* задаем высоту фото */
+  // left: 298px; /* позиция по оси X */
+  // top: 377px; /* позиция по оси Y */
+  top: -330px;
+  left: -580px;
+  z-index: 1; /* чтобы вторая картинка находилась под первой */
+}
+
+.description {
+  @include fontText;
+  margin-top: 40px; /* отступ сверху от родительского блока */
+  margin-left: 770px; /* отступ слева от родительского блока */
+  word-wrap: break-word; /* или overflow-wrap: break-word; */
+  max-width: 50%; /* ограничиваем максимальную ширину блока */
+  box-sizing: border-box;
+}
+
+

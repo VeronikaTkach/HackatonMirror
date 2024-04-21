@@ -1,0 +1,19 @@
+@use '../../../assets/styles/styles.scss' as *;
+@import '../../../assets/styles/variables.scss';
+
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  gap: 10px;
+  &__block {
+    display: flex;
+    gap: 10px;
+  }
+}
+
+.link__nav {
+  @include fontH4;
+  text-decoration: none;
+  cursor: pointer;
+  color: $colorDark;
+}

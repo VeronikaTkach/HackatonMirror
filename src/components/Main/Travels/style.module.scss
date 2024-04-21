@@ -1,0 +1,56 @@
+@use '../../../assets/styles/styles.scss' as *;
+@import '../../../assets/styles/variables.scss';
+
+.container {
+  display: flex;
+  justify-content: center;
+}
+
+.travels {
+  max-width: 100%; /* адаптивная ширина */
+  padding: 100px 80px;
+  box-sizing: border-box;
+  // background-color: #FAF7F3;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.text {
+  max-width: 520px;
+  // max-height: 123px;
+  box-sizing: border-box;
+  color: #464E4D;
+
+  .title {
+    @include fontDescription;
+    box-sizing: border-box;
+    margin-bottom: 16px;
+  }
+
+  .name {
+    @include fontH1;
+    box-sizing: border-box;
+    margin-bottom: 40px;
+
+    .highlight {
+      @include fontH1;
+      color: $colorBold;
+      box-sizing: border-box;
+      transition: font-weight 0.5s ease; // добавляем анимацию для свойства font-weight
+    }
+
+    .highlight:hover {
+      font-weight: bold; // изменяем на жирный при наведении на него курсора мыши
+    }
+  }
+}
+
+.cards {
+  display: flex; /* Устанавливаем flex-контейнер */
+  flex-wrap: nowrap; /* Запрещаем перенос элементов на новую строку */
+  justify-content: flex-start; /* Располагаем элементы в начале контейнера */
+  align-items: center; /* Выравниваем элементы по центру по вертикали */
+  gap: 150px;
+  box-sizing: border-box;
+}

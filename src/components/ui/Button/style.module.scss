@@ -1,0 +1,32 @@
+@use '../../../assets/styles/styles.scss' as *;
+@import '../../../assets/styles/variables.scss';
+
+.button {
+  @include fontText;
+  width: 190px;
+  background-color: transparent;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  font-family: 'ButtonFont', sans-serif;
+  box-sizing: border-box;
+//   border-radius: 5px;
+  }
+
+.buttonWhite {
+  color: $colorWhite;
+  border: 1px solid $colorWhite;
+  &:hover {
+    background-color: $colorWhite;
+    color: $colorGrey;
+  }
+}
+
+.buttonBlack {
+  color: $colorGrey;
+  border: 1px solid $colorGrey;
+  &:hover {
+    background-color: $colorGrey;
+    color: $colorWhite;
+  }
+}

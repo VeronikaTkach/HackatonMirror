@@ -1,0 +1,57 @@
+@use '../../../assets/styles/styles.scss' as *;
+@import '../../../assets/styles/variables.scss';
+
+.Founder {
+  @include fontDescription;
+  max-width: 100%; /* адаптивная ширина */
+  min-height: 700px; /* минимальная высота для содержимого */
+  padding: 100px 79px;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  &__title {
+    width: 800px;
+    height: 166px;
+    margin-left: 496px;
+  }
+  &__main {
+    margin-top: 30px;
+  }
+  &__block {
+
+  }
+}
+
+.title {
+  @include fontDescription;
+  box-sizing: border-box;
+}
+
+.name {
+  @include fontH1;
+  box-sizing: border-box;
+}
+
+.highlight {
+  color: $colorBold;
+  box-sizing: border-box;
+}
+
+.imageContainer {
+  //position: absolute; /* абсолютное позиционирование */
+  top: 0; /* начало отсчета по вертикали */
+  left: 0; /* начало отсчета по горизонтали */
+  display: flex;
+  justify-content: space-between;
+  margin-top: 120px;
+  box-sizing: border-box;
+}
+
+.description {
+//  @include fontText;
+  margin-top: 29px; /* отступ сверху от родительского блока */
+  margin-left: 763px; /* отступ слева от родительского блока */
+  word-wrap: break-word; /* или overflow-wrap: break-word; */
+  max-width: 50%; /* ограничиваем максимальную ширину блока */
+  box-sizing: border-box;
+}

@@ -1,0 +1,69 @@
+
+@mixin font-face-montserrat($font-size, $font-weight, $line-height) {
+    font-family: 'Montserrat', sans-serif;
+    font-size: $font-size;
+    font-weight: $font-weight;
+    line-height: $line-height;
+}
+
+@mixin font-face-playfair-display($font-size, $font-weight, $line-height) {
+    font-family: 'Playfair Display';
+    font-size: $font-size;
+    font-weight: $font-weight;
+    line-height: $line-height;
+}
+
+@mixin fontH1() {
+	@include font-face-playfair-display(36px, 400, 120%);
+	letter-spacing: 2%;
+}
+
+@mixin fontH2() {
+	@include font-face-playfair-display(40px, 500, 120%);
+	letter-spacing: 4%;
+}
+
+@mixin fontH3() {
+	@include font-face-playfair-display(28px, 400, 120%);
+	letter-spacing: 4%;
+}
+
+@mixin fontH4() {
+	@include font-face-montserrat(20px, 500, 120%);
+	letter-spacing: -0.02em;
+}
+
+@mixin fontH5() {
+	@include font-face-playfair-display(24px, 400, 120%);
+	letter-spacing: 2%;
+}
+
+@mixin fontH6() {
+	@include font-face-playfair-display(16px, 500, 120%);
+	letter-spacing: 2%;
+}
+
+@mixin fontH7() {
+	@include font-face-playfair-display(28px, 500, 120%);
+	letter-spacing: 4%;
+}
+
+@mixin fontPrice() {
+	@include font-face-montserrat(28px, 500, 130%);
+	letter-spacing: 2%;
+}
+
+@mixin fontText() {
+	@include font-face-montserrat(16px, 400, 130%);
+	letter-spacing: 0%;
+}
+
+@mixin fontDescription() {
+	@include font-face-montserrat(20px, 400, 120%);
+	letter-spacing: -0.02em;
+}
+
+@mixin fontInput() {
+	@include font-face-montserrat(20px, 300, 130%);
+	letter-spacing: -0.03em;
+}

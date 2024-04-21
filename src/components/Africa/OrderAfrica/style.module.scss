@@ -1,0 +1,119 @@
+@use '../../../assets/styles/styles.scss' as *;
+@import '../../../assets/styles/variables.scss';
+
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 960px;
+  background-image: url('../../../assets/images/africa_countries/order_africa.jpg');
+  background-size: cover;
+  background-repeat: no-repeat; /* чтобы изображение не повторялось */
+  background-position: center; /* чтобы изображение было центрировано */
+
+  .order {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+    width: 547px;
+    height: 471px;
+    padding: 40px;
+    top: 100px;
+    left: 40px;
+    background: rgba(255, 255, 255, 0.15);
+    &__block {
+      display: flex;
+      flex-direction: column;
+      gap: 28px;
+    }
+    &__title {
+      @include fontDescription;
+      font-size: 25px;
+      color: white;
+    }
+    &__name {
+      @include fontH1;
+      font-size: 35px;
+      text-transform: uppercase;
+      color: white;
+    }
+    &__inputs {
+      display: flex;
+      flex-direction: column;
+      &_row {
+        display: flex;
+        gap: 12px;
+      }
+    }
+  }
+
+
+  input {
+    border: none;
+    border-bottom: 0.5px solid white;
+    margin-bottom: 30px; 
+    background-color: transparent;
+    color: white;
+    &:focus {
+      outline: none;
+    }
+    &::placeholder {
+      color: white;
+      font-size: 75%;
+    }
+  }
+
+  .checkbox {
+    margin-bottom: 20px; 
+  }
+}
+
+.submittedMessage {
+  @include fontH3;
+  text-transform: uppercase;
+  width: 553px;
+  height: 279px;
+  top: 332px;
+  left: 444px;
+}
+
+// Добавленные стили для модального окна
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(255, 255, 255, 0.9);
+  width: 553px;
+  height: 297px;
+  border-radius: 10px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.modalContent {
+  text-align: center;
+}
+
+.modalTitle {
+  @include fontH3;
+  color: #000; /* Черный цвет для заголовка */
+}
+
+.modalCloseBtn {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #000;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.modalCloseBtn:hover {
+  background-color: #555; /* Цвет при наведении */
+}

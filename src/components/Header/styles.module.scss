@@ -1,0 +1,24 @@
+.header {
+  height: 102px;
+  // background-color: rgba(255, 255, 255, 0.65);
+}
+
+.headerContent {
+  position: relative;
+  z-index: 1; /* Ensure the content is above the video */
+  padding: 20px 82px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.headerContent > :first-child {
+  margin-right: 230px;
+}
+
+
+
+.utilsContainer {
+  display: flex;
+  gap: 30px;
+}

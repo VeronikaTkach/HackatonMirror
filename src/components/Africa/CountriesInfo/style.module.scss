@@ -1,0 +1,66 @@
+@use '../../../assets/styles/styles.scss' as *;
+@import '../../../assets/styles/variables.scss';
+
+.countriesInfo {
+  max-width: 100%; /* адаптивная ширина */
+  min-height: 719px; /* минимальная высота для содержимого */
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 100px 80px;
+  gap: 58px;
+}
+
+.text {
+  width: 388px;
+  // height: 283px;
+  box-sizing: border-box;
+}
+
+.title {
+  @include fontDescription;
+  box-sizing: border-box;
+  margin-bottom: 16px;
+}
+
+.name {
+  @include fontH1;
+  box-sizing: border-box;
+  margin-bottom: 40px;
+}
+
+.highlight {
+  @include fontH1;
+  color: $colorBold;
+  box-sizing: border-box;
+}
+
+.description {
+  @include fontText;
+  box-sizing: border-box;
+  margin-bottom: 40px;
+}
+
+.countriesInfo__img_small {
+  margin-top: 24px;
+}
+
+.imgContainer {
+  position: relative; /* Позиционируем относительно родителя */
+  width: 100%; /* Занимает всю доступную ширину контейнера */
+  height: 100%; /* Занимает всю доступную высоту контейнера */
+  overflow: hidden; /* Обрезаем все, что выходит за границы контейнера */
+}
+
+.imgZoom {
+  width: 100%; /* Занимает всю доступную ширину контейнера */
+  height: 100%; /* Занимает всю доступную высоту контейнера */
+  object-fit: cover; /* Изображение заполняет контейнер, сохраняя пропорции и обрезая лишнее */
+  transition: transform 0.5s ease-in-out; /* Плавный переход при изменении масштаба */
+}
+
+.imgZoom:hover {
+  transform: scale(1.2); /* Увеличение масштаба при наведении */
+  transform-origin: center; /* Центрируем увеличенное изображение */
+}

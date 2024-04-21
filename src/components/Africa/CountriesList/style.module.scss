@@ -1,0 +1,43 @@
+@use '../../../assets/styles/styles.scss' as *;
+@import '../../../assets/styles/variables.scss';
+
+.countrieslist {
+  // max-width: 1280px;
+  display: flex;
+  justify-content: center;
+  padding: 100px 79px;
+  // box-sizing: border-box;
+  gap: 58px;
+}
+
+.cards {
+  // display: flex;
+  // flex-wrap: wrap;
+  // justify-content: space-between; /* Равномерно распределяет элементы по строке */
+  // gap: 58px;
+  // box-sizing: border-box;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 58px;
+}
+
+
+
+.card-background {
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  left: 0; top: 0; right: 0; bottom: 0;
+  border-radius: 24px;
+  filter: brightness(.75) saturate(1.2) contrast(.85);
+  transition: .3s;
+}
+
+.card:hover .card-background {
+  transform: scale(1.05);
+}
+
+.cards:hover > .card:not(:hover) > .card-background {
+  filter: brightness(.5) saturate(0) contrast(1.2) blur(20px);
+}

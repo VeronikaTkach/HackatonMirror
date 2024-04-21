@@ -1,0 +1,129 @@
+//@use '../../../assets/styles/styles.scss' as *;
+@import '../../../assets/styles/variables.scss';
+
+.container1 {
+  max-width: 100%;
+  min-height: 640px;
+  background-color: $colorLight;
+  //padding: 80px 100px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; /* Выравниваем элементы по верхнему краю */
+  gap: 50px;
+  //pointer-events: none;
+}
+
+.container2 {
+  //padding: 80px;
+  display: flex;
+  gap: 50px;
+  flex-direction: row;
+  justify-content: space-between; /* Выравниваем элементы по верхнему и нижнему краям */
+  margin: 100px 80px; /* Отступы от верхнего и нижнего края блока 1 */
+}
+
+.block3 {
+  width: 727px;
+  height: 440px;
+}
+
+.block4 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  max-width: calc(100% - 727px - 50px); /* Ширина блока 4 не должна превышать доступное пространство */
+}
+
+.image {
+  height: auto;
+}
+
+.text {
+  flex-grow: 1; /* Расширяем блок с текстом, чтобы он занимал доступное пространство */
+
+}
+
+.symbol {
+  margin-top: 40px;
+  margin-bottom: 60px;
+  //@include fontAGTms;
+  //@include fontStyle(118px, 400, 118px);
+  //letter-spacing: 2%;
+}
+
+.impression {
+  @include fontInput;
+  //width: 436px;
+  //height: 176px;
+  //font-size: 30px;
+  color: #464E4D;
+  //text-transform: uppercase;
+}
+
+.signature {
+  @include fontH3;
+  text-transform: uppercase;
+  margin-top: 40px;
+}
+
+.controls {
+  //margin-top: 30px;
+  //text-align: left;
+}
+
+.controlButton {
+  background-color: transparent;
+  //border: 2px solid #fff;
+  font-size: 60px;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  cursor: pointer; /* Включаем курсор */
+  color: rgba(0, 0, 0, 0.5);
+  margin-left: 400px;
+  //display: flex;
+  //align-items: center;
+  //justify-content: center;
+  //margin-top: auto; /* Размещаем кнопку внизу блока */
+  //font-family: 'Название вашего нового шрифта', sans-serif; /* Изменяем шрифт */
+  //content: '\2190'; /* Юникод символ для стрелки влево */
+  //z-index: 2;
+}
+
+.right {
+  align-self: flex-end;
+}
+
+/* Адаптивные стили */
+@media (max-width: 768px) {
+  .container1 {
+    height: auto;
+  }
+}
+
+.fadeIn {
+  animation: fadeIn 0.5s;
+}
+
+.fadeOut {
+  animation: fadeOut 0.5s;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}

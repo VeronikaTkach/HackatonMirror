@@ -1,0 +1,129 @@
+@use '../../../assets/styles/styles.scss' as *;
+@import '../../../assets/styles/variables.scss';
+@import '../../../assets/styles/fonts.scss';
+@import '../../../index.scss';
+
+.aboutAfrica {
+  max-width: 100%; /* адаптивная ширина */
+  min-height: 850px; /* минимальная высота для содержимого */
+  padding: 100px 80px;
+  box-sizing: border-box;
+  background-color: #FAF7F3;
+  display: flex;
+  flex-direction: row;
+  gap: 58px;
+  justify-content: center;
+}
+
+.aboutAfrica * {
+  width: 388px;
+}
+
+.pyramidImage {
+  padding: 120px 0px 56px 0px;
+}
+
+.manImage {
+  width: 388px;
+  height: 356px;
+  padding: 0px 0px 58px 0px;
+}
+
+.womanImage {
+  width: 388px;
+  height: 328px;
+}
+
+.treesImage {
+  padding:  0px 0px 58px 0px;
+}
+
+.text {
+  box-sizing: border-box;
+}
+
+.title {
+  @include fontDescription;
+  box-sizing: border-box;
+  margin-bottom: 16px;
+}
+
+.name {
+  @include fontH1;
+  box-sizing: border-box;
+  margin-bottom: 40px;
+}
+
+.highlight {
+  color: $colorBold;
+  box-sizing: border-box;
+}
+
+.description {
+  @include fontText;
+  box-sizing: border-box;
+}
+
+.cards {
+  display: flex; /* Устанавливаем flex-контейнер */
+  flex-wrap: wrap;
+  flex-direction: column;
+  max-width: 626px;
+  max-height: 898px;
+  box-sizing: border-box;
+  gap: 58px;
+  transform: translateY(0); /* Начальное положение - элемент не двигается */
+}
+
+.Button {
+  background-color: transparent;
+  color: black;
+  border: 1px solid black;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  // position: absolute; /* абсолютное позиционирование */
+  // right: 620px; /* отступ справа */
+  // bottom: 120px; /* отступ снизу */
+  margin-left: 0px;
+  margin-top: 20px;
+  font-family: 'ButtonFont', sans-serif;
+  margin-top: 120px;
+  box-sizing: border-box;
+}
+
+.applyButton:hover {
+  background-color: grey;
+  color: white;
+}
+
+.imageContainer,
+.secondColumn {
+  position: relative;
+}
+
+.imageContainer:hover img,
+.manImage:hover,
+.womanImage:hover {
+  transform: rotateX(var(--xTilt)) rotateY(var(--yTilt));
+}
+
+img,
+.manImage,
+.womanImage {
+  max-width: 100%;
+  height: auto;
+  transition: transform 0.1s ease;
+}
+
+.text {
+  transition: transform 3s ease; // Добавляем переход на 3 секунды при наведении
+}
+
+.text:hover {
+  transform: scale(1.2); // Увеличиваем текст в 1.2 раза при наведении
+}
+
+img:hover {
+  cursor: pointer;
+}
